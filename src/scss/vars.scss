@@ -1,0 +1,59 @@
+:root {
+  /* colors */
+  --color-subtitle: #868686;
+  --color-btn-product: #e8b923;
+
+  /* sizes */
+  --width-modal: 1280px;
+  --width-header: 1600px;
+  --width-block: 1460px;
+  --block-indentation: 100px;
+  --border-radius: 10px 0px 10px 0px;
+
+  /* font-sizes */
+  --font-size-subtitle: clamp(0.75em, 0.625vw, 0.85em); //font-size 12px
+  --font-size-text: clamp(0.85em, 0.833vw, 1em); //font-size 16px
+  --font-size-medium: clamp(1em, 0.938vw, 1.125em); //font-size 18px
+  --font-size-large: clamp(1.125em, 1.042vw, 1.25em); //font-size 20px
+  --font-size-title: clamp(1.25em, 1.875vw, 2.25em); //font-size 36px
+  --font-size-year: clamp(2.25em, 2.5vw, 3em); //font-size 48px
+  --font-size-h1: clamp(2.75em, 3.333vw, 4em); //font-size 64px
+}
+
+/* Адаптация для экранов шириной до 1680px */
+@media (max-width: 1680px) {
+  :root {
+    --width-header: 95svw; 
+    --width-block: 90svw;
+    --block-indentation: 90px;
+  }
+}
+
+/* Адаптация для экранов шириной до 1200px */
+@media (max-width: 1200px) {
+  :root {
+    --width-modal: 90svw;
+    --block-indentation: 80px;
+  }
+}
+
+/* Адаптация для экранов шириной до 768px */
+@media (max-width: 768px) {
+  :root {
+    --block-indentation: 50px;
+  }
+}
+
+/* Адаптация для экранов шириной до 480px */
+@media (max-width: 480px) {
+  :root {
+    --width-header: 90svw; 
+    --block-indentation: 30px;
+  }
+}
+
+.wrapper{
+  section:first-child{
+    padding-top: clamp(70px, 12.5svw, 145px);
+  }
+}

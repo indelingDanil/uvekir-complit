@@ -1,0 +1,12 @@
+<svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip75_378">
+			<rect id="email" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="фрейм 11" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="email" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip75_378)">
+		<path id="矢量 38" d="M20 4L4 4C2.9 4 2.01 4.89 2.01 6L2 18C2 19.1 2.9 20 4 20L20 20C21.1 20 22 19.1 22 18L22 6C22 4.89 21.1 4 20 4ZM20 8L12 13L4 8L4 6L12 11L20 6L20 8Z" fill="#9C9C9C" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>

@@ -1,0 +1,253 @@
+.single-catalog {
+  @include max-width-blocks;
+  margin-top: 40px;
+
+  &__crumb {
+    margin-bottom: 90px;
+    display: flex;
+    font-size: var(--font-size-text);
+    font-weight: 300;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__title {
+    color: #e8ab23;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 100%;
+    margin-left: 90px;
+
+    &-list {
+    }
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      font-size: var(--font-size-text);
+      font-weight: 400;
+      &-top {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-value {
+      max-width: 380px;
+      font-size: var(--font-size-text);
+      font-weight: 300;
+      text-align: right;
+    }
+  }
+
+  &__actions {
+    margin-top: 40px;
+    justify-content: end;
+    gap: 5px;
+  }
+
+  &__cart-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn-heart {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    background-color: var(--color-btn-product);
+    svg path {
+      fill: #fff;
+    }
+  }
+
+  .slider {
+    padding-bottom: 40px;
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-container.swiper-thumbs {
+      .swiper-slide {
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        cursor: pointer;
+        border: 1px solid #000000;
+        .slider__image {
+          height: 100%;
+          img {
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+          }
+        }
+      }
+    }
+
+    &__flex {
+      display: flex;
+      align-items: flex-start;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    &__col {
+      display: flex;
+      flex-direction: column;
+      width: 120px;
+      margin-right: 50px;
+    }
+
+    &__thumbs {
+      height: 528px;
+      margin: 50px 0;
+
+      .slider__image {
+        transition: 0.25s;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .swiper-slide-thumb-active .slider__image {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+
+    &__images {
+      border-radius: var(--border-radius);
+      border: 1px solid #000000;
+      height: 630px;
+      width: 29svw;
+      overflow: hidden;
+
+      .slider__image {
+        object-fit: contain;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          transition: 3s;
+        }
+      }
+    }
+  }
+
+  &__text {
+    h2 {
+      text-transform: uppercase;
+      font-size: var(--font-size-title);
+      font-weight: 400;
+      margin: 30px 0 15px 0;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: var(--font-size-large);
+      font-weight: 500;
+      margin: 25px 0 15px 0;
+    }
+    p,
+    li {
+      font-size: var(--font-size-text);
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+    ul {
+      li {
+        list-style: disc;
+        margin-left: 17px;
+      }
+    }
+    ol {
+      li {
+        list-style: decimal;
+        margin-left: 20px;
+      }
+    }
+    figure {
+      margin: 30px 0;
+    }
+    thead {
+      border-bottom: 1px solid;
+    }
+    a {
+      transition: 0.5s ease all;
+    }
+    a:hover {
+      color: #ffc107;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .single-catalog {
+    &__content {
+      display: block;
+    }
+    &__crumb {
+    }
+    &__info-value {
+      margin-left: 15px;
+    }
+    &__info {
+      margin-left: 0;
+    }
+    .slider {
+      &__flex {
+        justify-content: space-between;
+      }
+      &__images {
+        width: 80%;
+      }
+      &__col {
+        width: 15%;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .single-catalog {
+    &__text {
+      margin-top: 30px;
+    }
+    .slider {
+      &__images {
+        width: 100%;
+        height: fit-content;
+      }
+      &__col {
+        display: none;
+      }
+    }
+  }
+}

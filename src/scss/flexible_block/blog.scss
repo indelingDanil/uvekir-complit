@@ -1,0 +1,67 @@
+.blog {
+  @include max-width-blocks;
+  margin-top: var(--block-indentation);
+
+  &__title {
+    @include title;
+  }
+
+  &__subtitle {
+    @include subtitle;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  &__card {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 20px 0px 20px 0px;
+    overflow: hidden;
+    width: 100%;
+    // max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  &__image {
+    object-fit: cover;
+    max-height: 232px;
+    width: 100%;
+    height: auto;
+  }
+
+  &__info {
+    padding: 10px;
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  &__date-link {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__date {
+    font-size: var(--font-size-subtitle);
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #868686;
+  }
+
+  &__link {
+    @include center;
+    gap:2px;
+    font-size: var(--font-size-subtitle);
+    font-weight: 400;
+  }
+}

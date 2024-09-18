@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Typography
+html,
+body {
+  font-family: "Inter";
+  line-height: 1.3;
+  font-size: 16px;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // overflow-x: hidden;
+}
+
+.wrapper {
+  display: block;
+}
+
+// Remove default list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em;
+}
+
+// Forms
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+
+@import "./vars.scss";
+@import "./mixi.scss";
+@import "./header.scss";
+@import "./flexible_block/main_screen.scss";
+@import "./flexible_block/about_company.scss";
+@import "./flexible_block/trus_us.scss";
+@import "./flexible_block/new_products.scss";
+@import "./flexible_block/subscribe.scss";
+@import "./flexible_block/blog.scss";
+@import "./flexible_block/main_catalog.scss";
+@import "./flexible_block/product_catalog.scss";
+@import "./single-catalog.scss";
+@import "./flexible_block/basket.scss";
+@import "./flexible_block/favorites.scss";
+@import "./flexible_block/content.scss";
+@import"./flexible_block/contacts.scss";
+@import "./search.scss";
+@import "./footer.scss";
+
+
+.active-heart {
+  svg path {
+    fill: #e80000;
+  }
+}

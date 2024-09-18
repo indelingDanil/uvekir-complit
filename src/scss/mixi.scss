@@ -1,0 +1,32 @@
+@mixin max-width-header {
+  max-width: var(--width-header);
+  margin: 0 auto;
+}
+
+@mixin max-width-blocks {
+  max-width: var(--width-block);
+  margin: 0 auto;
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin space-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin title {
+  text-transform: uppercase;
+  font-size: var(--font-size-title);
+  font-weight: 400;
+}
+
+@mixin subtitle {
+  font-size: var(--font-size-subtitle);
+  color: var(--color-subtitle);
+  font-weight: 400;
+}

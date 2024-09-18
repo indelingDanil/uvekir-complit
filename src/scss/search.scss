@@ -1,0 +1,41 @@
+.search{
+    display: block;
+    @include max-width-blocks;
+    margin-top: 40px;
+    .search-pagination{
+        width: fit-content;
+        margin: 30px auto;
+    }
+    .page-numbers{
+        padding: 3px 5px;
+        border: 1px solid #000000;
+        border-radius: 5px 0 5px 0;
+        transition: 0.5s ease all;
+    }
+    .page-numbers:hover{
+        color: #e8b923;
+        border: 1px solid #e8b923;
+    }
+    .page-numbers.current{
+        cursor: default;
+        user-select: none;
+        /* Для поддержки старых браузеров: */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* IE/Edge */
+        color: #e8b923;
+        border: 1px solid #e8b923;
+    }
+    .page-numbers.dots{
+        border: none;
+        cursor: default;
+        user-select: none;
+        /* Для поддержки старых браузеров: */
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none;    /* Firefox */
+        -ms-user-select: none;     /* IE/Edge */
+    }
+    .page-numbers.dots:hover{
+        color: #000000;
+    }
+}

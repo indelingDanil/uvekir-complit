@@ -1,0 +1,15 @@
+<svg width="35.000000" height="35.000000" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip98_208">
+			<rect id="heart-line" width="35.000000" height="35.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="фрейм 9" width="35.000000" height="35.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="heart-line" width="35.000000" height="35.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip98_208)">
+		<path id="矢量 17" d="M17.5 6.6C20.92 3.52 26.22 3.63 29.52 6.93C32.81 10.24 32.93 15.51 29.86 18.94L17.49 31.33L5.13 18.94C2.06 15.51 2.18 10.23 5.47 6.93C8.78 3.63 14.06 3.52 17.5 6.6L17.5 6.6ZM27.45 8.99C25.26 6.8 21.73 6.71 19.44 8.77L17.5 10.52L15.55 8.77C13.25 6.71 9.73 6.8 7.54 9C5.36 11.17 5.26 14.65 7.26 16.95L17.5 27.2L27.73 16.95C29.74 14.65 29.63 11.17 27.45 8.99L27.45 8.99Z" fill="#9C9C9C" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
